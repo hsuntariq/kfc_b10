@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+    background-color: gray;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(red,orange);
+}
+
+
+body{
+    background-color: #000;
+    color: white;
+    font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+nav{
+    padding: 1rem;
+}
+
+nav,.left,.right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:1.5rem;
+}
+
+.delivery,.pickup{
+    display: flex;
+    gap:0.5rem;
+    align-items:center;
+    text-transform: uppercase;
+    background-color: #1C1816;
+ padding: 0.4rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.bucket{
+    position: relative;
+}
+
+.bucket h6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    font-size: 1rem;
+}
+
+.right button{
+    background: #EA002A;
+    padding: 0.7rem 1rem;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.delivery{
+    border:2px solid #EA002A;
+   
+}
+
+.left i{
+    font-size: 2rem;
+}
+
+.front{
+    background-image: url('https://www.kfcpakistan.com/images/24768cf0-ccda-11ee-a3d2-55a29658d5c6-995x356_desktop_image-2024-02-16144618.jpg');
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reorder button{
+    width: 40%;
+    margin: 2rem auto;
+    padding: 0.6rem;
+    background-color: #EA002A;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 5px;
+    display: block;
+}
+
+
+.explore{
+    width: 70%;
+    margin: auto;
+    padding: 5rem;
+}
+
+.round-cards{
+    display: flex;
+    gap:1rem;
+    padding: 2rem;
+}
+
+.e-card img{
+    width: 100%;
+}
+
+.explore h1{
+    text-transform: uppercase;
+}
+
+.explore hr{
+    width: 5%;
+    background-color: #EA002A;
+    height: 3px;
+    border: none;
+} 
+
+.e-card{
+    background-color: #1C1816;
+    border-radius: 50% 50% 10px 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.e-card hr{
+    width: 20%;
+}
+
+.dot{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+.e-card:hover{
+    transform: translateY(-20px);
+}
+
+.selling{
+    width: 70%;
+    margin: auto;
+}
+
+
+.selling-cards{
+    margin: 1rem 0;
+    display: flex;
+    gap:1.5rem;
+}
+
+.s-card{
+    padding: 0 0 0 1rem;
+    background: #1C1816;
+}
+
+.s-card img{
+    margin-top: -2rem;
+}
+
+.price{
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 45% 50%, 0% 0%);
+    background-color: #EA002A;
+    text-align: right;
+    width: 35%;
+    margin: 1rem 0 0 0;
+    padding: 0.3rem;
+    margin-left: auto;
+}
+
+
+.dots{
+    display: flex;
+    gap: 0.3rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.red-dot{
+    width: 20px;
+    background-color: #EA002A;
+    height: 30px;
+}
+
+.deals{
+    width: 70%;
+    margin: 4rem auto;
+
+}
+
+.deals h1,.selling h1{
+    text-transform: uppercase;
+}
+
+.deal-cards{
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.deal-card{
+    padding: 0 0 1rem 1rem;
+    border-radius: 10px;
+    background:#1C1816;
+    position: relative;
+}
+
+.deal-card img{
+    margin-top: -2rem;
+}
+
+.deal-img{
+    transition: all 0.3s;
+}
+
+.deal-image{
+    overflow: hidden;
+}
+
+.deal-card:hover .deal-img{
+    scale: 1.1;
+}
+
+.deal-card .bi-heart{
+    color: #EA002A;
+    font-size: 2rem;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+
+hr{
+    width: 5%;
+    background-color: #EA002A;
+    height: 3px;
+    border: none;
+} 
+
+
+.add-button button{
+    background-color: #EA002A;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: auto;
+    display: block;
+    margin-bottom: -2rem;
+    border-radius: 5px;
+    transition: all 0.7s;
+}
+
+
+.add-button button:hover{
+    background-color: white;
+    border: 1px solid #EA002A;
+    color: #EA002A;
+}
